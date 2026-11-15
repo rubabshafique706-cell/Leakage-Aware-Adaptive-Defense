@@ -1,0 +1,28 @@
+# Local datasets and private inputs
+data/raw/
+data/private/
+kaggle/input/
+*.zip
+*.7z
+*.rar
+
+# Training artifacts and checkpoints
+checkpoints/
+**/checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Python / notebook runtime
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.venv/
+venv/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
