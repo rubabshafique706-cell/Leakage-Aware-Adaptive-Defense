@@ -1,10 +1,7 @@
 # Leakage-Aware Adaptive Defense Against Property Inference in VFL (LAAD-PIA-VFL)
 
 This repository contains the author's VFL property-inference defense
-implementation, research paper, and experiment outputs. Its directory
-organization is adapted to the supplied `AIDA-SF-MIDA` reference repository
-(layout conventions only). **The AIDA-SF-MIDA algorithms, datasets, model
-code, and results are not copied.** All research methods and artifacts here
+implementation, research paper, and experiment output. All research methods and artifacts here
 belong to the LAAD-PIA-VFL project.
 
 ## Repository structure
