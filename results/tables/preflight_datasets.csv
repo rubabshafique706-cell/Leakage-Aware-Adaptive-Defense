@@ -1,0 +1,7 @@
+dataset,file,label_col,property_col,n_raw,n,n_features_A,n_features_B,label_prevalence,property_prevalence
+adult,/kaggle/input/datasets/zukhrafkhan/5-datasets/adult/adult.csv,income,sex,32561,32561,6,6,0.2408095574460244,0.33079450876815825
+bank,/kaggle/input/datasets/zukhrafkhan/5-datasets/bankmarketing/bank/bank-full.csv,y,marital,45211,45211,7,7,0.11698480458295547,0.6019331578598128
+census,/kaggle/input/datasets/zukhrafkhan/5-datasets/censusincomekdd/census/census-income.data,label,sex,299285,50000,19,20,0.06266,0.51922
+health,/kaggle/input/datasets/zukhrafkhan/5-datasets/health/diabetic_data.csv,readmitted,age,71518,50000,20,21,0.39786,0.6654
+lawschool,/kaggle/input/datasets/zukhrafkhan/5-datasets/lawschool/bar_pass_prediction.csv,pass_bar,male,22407,22402,13,14,0.9478171591822159,0.5613784483528257
+celeba,/kaggle/input/datasets/zukhrafkhan/celeba-claude/celebA/list_attr_celeba.csv,Smiling,Male,202599,20000,6144,6144,0.4826,0.4195

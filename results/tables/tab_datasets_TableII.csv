@@ -1,0 +1,7 @@
+Dataset,#Samples,Task label,Target property,rho,Label prev.,Features A/B
+adult,32561,income,sex,0.3307945087681582,0.2408095574460244,6/6
+bank,45211,y,marital,0.6019331578598128,0.1169848045829554,7/7
+census,50000,label,sex,0.51922,0.06266,19/20
+health,50000,readmitted,age,0.6654,0.39786,20/21
+lawschool,22402,pass_bar,male,0.5613784483528257,0.947817159182216,13/14
+celeba,20000,Smiling,Male,0.4195,0.4826,6144/6144
