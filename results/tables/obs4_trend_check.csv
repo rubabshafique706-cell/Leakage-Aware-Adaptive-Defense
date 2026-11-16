@@ -1,0 +1,7 @@
+Dataset,AUC (s=0 / .3 / .6),AUC trend,G (s=0 / .3 / .6),G trend,prior MAE0 (s=0 / .3 / .6),ranking preserved,ranking (matched)
+adult,0.903 / 0.901 / 0.898,no consistent trend,0.0431 / 0.0464 / 0.0743,increase,0.126 / 0.135 / 0.178,False,adaptive < fixed_0.300 < no_defense
+bank,0.700 / 0.699 / 0.695,no consistent trend,0.0061 / 0.0079 / 0.0156,no consistent trend,0.126 / 0.140 / 0.224,True,fixed_0.300 < adaptive < no_defense
+census,0.761 / 0.760 / 0.756,no consistent trend,0.0150 / 0.0165 / 0.0315,no consistent trend,0.126 / 0.140 / 0.218,True,fixed_0.300 < adaptive < no_defense
+health,0.714 / 0.713 / 0.712,no consistent trend,0.0051 / 0.0072 / 0.0156,increase,0.126 / 0.138 / 0.222,True,fixed_0.300 < adaptive < no_defense
+lawschool,0.608 / 0.604 / 0.598,no consistent trend,-0.0016 / -0.0005 / 0.0003,no consistent trend,0.126 / 0.140 / 0.222,True,fixed_0.300 < adaptive < no_defense
+celeba,0.850 / 0.848 / 0.841,no consistent trend,0.0141 / 0.0145 / 0.0355,no consistent trend,0.126 / 0.138 / 0.199,True,fixed_0.300 < adaptive < no_defense
