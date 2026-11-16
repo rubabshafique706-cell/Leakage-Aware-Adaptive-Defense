@@ -1,0 +1,109 @@
+{
+ "CFG": {
+  "embedding_dim": 32,
+  "server_hidden": 64,
+  "batch_size": 256,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "clip_norm": 1.0,
+  "sigma_min": 0.0,
+  "sigma_max": 0.3,
+  "fixed_sigmas": [
+   0.05,
+   0.1,
+   0.2,
+   0.3
+  ],
+  "calibration_sigmas": [
+   0.0,
+   0.05,
+   0.1,
+   0.2,
+   0.3
+  ],
+  "split": {
+   "train": 0.6,
+   "sim": 0.1,
+   "ref": 0.1,
+   "test": 0.2
+  },
+  "monitor": {
+   "bins": 30,
+   "probe_train_frac": 0.7,
+   "weights": {
+    "jsd": 0.35,
+    "wasserstein": 0.25,
+    "smd": 0.15,
+    "probe": 0.25
+   },
+   "jsd_normalize_ln2": false
+  },
+  "controller": {
+   "budget": 0.3,
+   "hysteresis": 0.05,
+   "eta": 0.15,
+   "beta": 0.7,
+   "initial_sigma": 0.05
+  },
+  "tau_override": {},
+  "shifts": {
+   "matched": 0.0,
+   "moderate": 0.3,
+   "severe": 0.6
+  },
+  "prev_attack": {
+   "batch_size": 64,
+   "n_train_batches": 600,
+   "n_test_batches": 400,
+   "spread": 0.25,
+   "ridge_alpha": 1.0
+  },
+  "strong_attacker_conditions": [
+   "matched"
+  ],
+  "snapshot_epochs": [
+   1,
+   5,
+   10,
+   20,
+   30
+  ],
+  "calibration_mode": "final",
+  "track_true_risk": true,
+  "epochs": 30
+ },
+ "SEEDS": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "EPOCHS": 30,
+ "MAX_ROWS": 50000,
+ "RUN_TAG": "reviewer_v3_reviewer_complete",
+ "HP_OVERRIDE": {},
+ "TARGET_ACC (report only)": 0.956,
+ "PROPERTY_IN_FEATURES": false,
+ "CELEBA_MODE": "image",
+ "CELEBA_N": 20000,
+ "tau_per_dataset": {
+  "adult": 0.3,
+  "bank": 0.3,
+  "census": 0.3,
+  "health": 0.3,
+  "lawschool": 0.3,
+  "celeba": 0.3
+ },
+ "torch": "2.11.0+cu128",
+ "device": "cuda",
+ "numpy": "2.1.3",
+ "pandas": "2.3.3",
+ "time": "2026-10-30 03:50:16"
+}
