@@ -1,0 +1,2 @@
+mean_epoch_train_sec,mean_monitor_sec_per_epoch,monitor_share_pct,calibration_models_per_run,extra_communication_floats_per_sample
+0.5779372847372469,0.04738551418445766,7.577768516703435,5,0
