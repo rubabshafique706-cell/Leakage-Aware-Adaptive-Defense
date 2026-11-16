@@ -1,0 +1,42 @@
+\begin{table*}[!t]
+\caption{Controller variants: budget compliance, tracking and utility (matched auxiliary data).}
+\label{tab:v2}
+\centering
+\footnotesize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lllllllllll}
+\hline
+dataset & variant & tau & mean R & mean R - tau & seeds R<=tau & seeds |R-tau|<=h & mean final sigma & Delta U (acc.) & Delta AUC (task) & attack AUC \\
+\hline
+adult & adaptive & 0.300 & 0.417 & 0.117 & 0.000 & 0.000 & 0.300 & 0.006 & 0.011 & 0.709 \\
+adult & adaptive\_margin & 0.300 & 0.417 & 0.117 & 0.000 & 0.000 & 0.300 & 0.006 & 0.011 & 0.709 \\
+adult & adaptive\_multiepoch & 0.300 & 0.417 & 0.117 & 0.000 & 0.000 & 0.300 & 0.006 & 0.011 & 0.709 \\
+adult & adaptive\_nohyst & 0.300 & 0.417 & 0.117 & 0.000 & 0.000 & 0.300 & 0.006 & 0.011 & 0.709 \\
+bank & adaptive & 0.300 & 0.321 & 0.021 & 0.100 & 0.800 & 0.113 & -0.000 & 0.005 & 0.661 \\
+bank & adaptive\_margin & 0.300 & 0.284 & -0.016 & 0.800 & 0.900 & 0.168 & 0.001 & 0.008 & 0.642 \\
+bank & adaptive\_multiepoch & 0.300 & 0.312 & 0.012 & 0.500 & 0.900 & 0.128 & -0.000 & 0.006 & 0.656 \\
+bank & adaptive\_nohyst & 0.300 & 0.295 & -0.005 & 0.700 & 0.900 & 0.164 & 0.001 & 0.008 & 0.647 \\
+census & adaptive & 0.300 & 0.280 & -0.020 & 0.600 & 0.600 & 0.084 & 0.001 & 0.005 & 0.640 \\
+census & adaptive\_margin & 0.300 & 0.244 & -0.056 & 1.000 & 0.500 & 0.129 & -0.000 & 0.005 & 0.622 \\
+census & adaptive\_multiepoch & 0.300 & 0.323 & 0.023 & 0.300 & 0.800 & 0.057 & 0.001 & 0.003 & 0.662 \\
+census & adaptive\_nohyst & 0.300 & 0.282 & -0.018 & 0.700 & 0.700 & 0.084 & 0.001 & 0.005 & 0.641 \\
+health & adaptive & 0.300 & 0.303 & 0.003 & 0.600 & 0.900 & 0.084 & -0.002 & 0.001 & 0.651 \\
+health & adaptive\_margin & 0.300 & 0.238 & -0.062 & 1.000 & 0.500 & 0.125 & 0.002 & -0.000 & 0.619 \\
+health & adaptive\_multiepoch & 0.300 & 0.286 & -0.014 & 0.600 & 0.700 & 0.095 & 0.001 & 0.001 & 0.643 \\
+health & adaptive\_nohyst & 0.300 & 0.296 & -0.004 & 0.600 & 0.900 & 0.091 & -0.001 & 0.001 & 0.648 \\
+lawschool & adaptive & 0.300 & 0.205 & -0.095 & 1.000 & 0.000 & 0.000 & 0.001 & 0.003 & 0.603 \\
+lawschool & adaptive\_margin & 0.300 & 0.205 & -0.095 & 1.000 & 0.000 & 0.000 & 0.001 & 0.004 & 0.602 \\
+lawschool & adaptive\_multiepoch & 0.300 & 0.205 & -0.095 & 1.000 & 0.000 & 0.000 & 0.001 & 0.004 & 0.603 \\
+lawschool & adaptive\_nohyst & 0.300 & 0.205 & -0.095 & 1.000 & 0.000 & 0.000 & 0.001 & 0.003 & 0.603 \\
+celeba & adaptive & 0.300 & 0.304 & 0.004 & 0.500 & 0.600 & 0.128 & 0.003 & 0.005 & 0.652 \\
+celeba & adaptive\_margin & 0.300 & 0.179 & -0.121 & 1.000 & 0.100 & 0.256 & 0.005 & 0.009 & 0.590 \\
+celeba & adaptive\_multiepoch & 0.300 & 0.337 & 0.037 & 0.300 & 0.500 & 0.093 & 0.003 & 0.002 & 0.669 \\
+celeba & adaptive\_nohyst & 0.300 & 0.292 & -0.008 & 0.700 & 0.700 & 0.132 & 0.003 & 0.005 & 0.646 \\
+ALL (mean) & adaptive & -- & -- & 0.005 & 0.467 & 0.483 & -- & 0.002 & 0.005 & 0.653 \\
+ALL (mean) & adaptive\_margin & -- & -- & -0.039 & 0.800 & 0.333 & -- & 0.002 & 0.006 & 0.631 \\
+ALL (mean) & adaptive\_multiepoch & -- & -- & 0.013 & 0.450 & 0.483 & -- & 0.002 & 0.004 & 0.657 \\
+ALL (mean) & adaptive\_nohyst & -- & -- & -0.002 & 0.617 & 0.533 & -- & 0.002 & 0.005 & 0.649 \\
+\hline
+\end{tabular}
+}
+\end{table*}

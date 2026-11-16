@@ -1,0 +1,20 @@
+\begin{table*}[!t]
+\caption{Observation 1: Spearman correlation between each leakage signal and the simulated-attacker risk $R$ over the calibration models, and error of the isotonic risk estimator.}
+\label{tab:obs1}
+\centering
+\footnotesize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llllllllll}
+\hline
+Dataset & Points & Spearman JSD & Spearman Wass. & Spearman SMD & Spearman Probe AUC & Spearman kappa & Estimator MAE (in-sample) & Estimator MAE (leave-one-sigma-out) & Monotone violations / run \\
+\hline
+adult & 50 & 0.903 & 0.868 & 0.861 & 0.970 & 0.936 & 0.003 & 0.047 & 0.200 \\
+bank & 50 & 0.798 & 0.837 & 0.826 & 0.942 & 0.940 & 0.001 & 0.031 & 0.100 \\
+census & 50 & 0.823 & 0.566 & 0.504 & 0.938 & 0.928 & 0.000 & 0.055 & 0.100 \\
+health & 50 & 0.756 & 0.723 & 0.681 & 0.950 & 0.893 & 0.007 & 0.048 & 0.500 \\
+lawschool & 50 & 0.228 & 0.451 & 0.566 & 0.811 & 0.844 & 0.002 & 0.025 & 0.100 \\
+celeba & 50 & 0.795 & 0.798 & 0.785 & 0.941 & 0.943 & 0.002 & 0.088 & 0.200 \\
+\hline
+\end{tabular}
+}
+\end{table*}

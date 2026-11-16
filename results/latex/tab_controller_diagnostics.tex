@@ -1,0 +1,38 @@
+\begin{table*}[!t]
+\caption{Controller diagnostics (mean over seeds): tolerance-band occupancy, tracking error, risk-estimator error, and the effect of the hysteresis band on the fluctuation of $\sigma_t$.}
+\label{tab:diag}
+\centering
+\footnotesize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lllllllll}
+\hline
+dataset & variant & band\_frac\_raw & band\_frac\_smoothed & track\_err\_last10 & est\_vs\_true\_mae & n\_sigma\_changes & sigma\_total\_variation & final\_sigma \\
+\hline
+adult & adaptive & 0.000 & 0.000 & 0.133 & 0.025 & 30.000 & 0.250 & 0.300 \\
+adult & adaptive\_margin & 0.000 & 0.000 & 0.133 & 0.025 & 30.000 & 0.250 & 0.300 \\
+adult & adaptive\_multiepoch & 0.000 & 0.000 & 0.134 & 0.023 & 30.000 & 0.250 & 0.300 \\
+adult & adaptive\_nohyst & 0.000 & 0.000 & 0.133 & 0.025 & 30.000 & 0.250 & 0.300 \\
+bank & adaptive & 0.752 & 0.836 & 0.034 & 0.025 & 6.700 & 0.063 & 0.113 \\
+bank & adaptive\_margin & 0.932 & 0.964 & 0.013 & 0.027 & 10.800 & 0.118 & 0.168 \\
+bank & adaptive\_multiepoch & 0.764 & 0.792 & 0.031 & 0.020 & 8.600 & 0.078 & 0.128 \\
+bank & adaptive\_nohyst & 0.924 & 0.912 & 0.012 & 0.026 & 30.000 & 0.123 & 0.164 \\
+celeba & adaptive & 0.700 & 0.848 & 0.027 & 0.064 & 7.600 & 0.102 & 0.128 \\
+celeba & adaptive\_margin & 0.276 & 0.328 & 0.089 & 0.066 & 11.400 & 0.206 & 0.256 \\
+celeba & adaptive\_multiepoch & 0.680 & 0.804 & 0.026 & 0.056 & 6.900 & 0.077 & 0.093 \\
+celeba & adaptive\_nohyst & 0.740 & 0.928 & 0.017 & 0.065 & 30.000 & 0.143 & 0.132 \\
+census & adaptive & 0.732 & 0.856 & 0.029 & 0.042 & 6.300 & 0.073 & 0.084 \\
+census & adaptive\_margin & 0.408 & 0.492 & 0.044 & 0.038 & 5.600 & 0.088 & 0.129 \\
+census & adaptive\_multiepoch & 0.880 & 0.964 & 0.018 & 0.027 & 1.900 & 0.023 & 0.057 \\
+census & adaptive\_nohyst & 0.780 & 0.936 & 0.015 & 0.043 & 30.000 & 0.117 & 0.084 \\
+health & adaptive & 0.676 & 0.868 & 0.025 & 0.038 & 6.100 & 0.061 & 0.084 \\
+health & adaptive\_margin & 0.364 & 0.460 & 0.060 & 0.037 & 9.600 & 0.112 & 0.125 \\
+health & adaptive\_multiepoch & 0.776 & 0.920 & 0.021 & 0.036 & 5.000 & 0.052 & 0.095 \\
+health & adaptive\_nohyst & 0.744 & 0.932 & 0.019 & 0.038 & 30.000 & 0.125 & 0.091 \\
+lawschool & adaptive & 0.000 & 0.000 & 0.107 & 0.027 & 30.000 & 0.050 & 0.000 \\
+lawschool & adaptive\_margin & 0.000 & 0.000 & 0.108 & 0.028 & 28.800 & 0.050 & 0.000 \\
+lawschool & adaptive\_multiepoch & 0.000 & 0.000 & 0.099 & 0.015 & 30.000 & 0.050 & 0.000 \\
+lawschool & adaptive\_nohyst & 0.000 & 0.000 & 0.107 & 0.027 & 30.000 & 0.050 & 0.000 \\
+\hline
+\end{tabular}
+}
+\end{table*}

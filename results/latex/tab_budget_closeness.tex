@@ -1,0 +1,26 @@
+\begin{table*}[!t]
+\caption{Closeness of the adaptive defense to the leakage budget (matched auxiliary data, evaluation attacker).}
+\label{tab:budget}
+\centering
+\footnotesize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llllllllllll}
+\hline
+Dataset & Variant & tau & mean R & std R & mean R - tau & seeds with R <= tau & seeds within tau+-h & seeds within tau+-2h & mean final sigma & Delta U (acc.) & Delta AUC \\
+\hline
+adult & adaptive & 0.300 & 0.417 & 0.019 & 0.117 & 0.000 & 0.000 & 0.200 & 0.300 & 0.006 & 0.011 \\
+adult & adaptive\_nohyst & 0.300 & 0.417 & 0.019 & 0.117 & 0.000 & 0.000 & 0.200 & 0.300 & 0.006 & 0.011 \\
+bank & adaptive & 0.300 & 0.321 & 0.029 & 0.021 & 0.100 & 0.800 & 1.000 & 0.113 & -0.000 & 0.005 \\
+bank & adaptive\_nohyst & 0.300 & 0.295 & 0.031 & -0.005 & 0.700 & 0.900 & 1.000 & 0.164 & 0.001 & 0.008 \\
+census & adaptive & 0.300 & 0.280 & 0.040 & -0.020 & 0.600 & 0.600 & 1.000 & 0.084 & 0.001 & 0.005 \\
+census & adaptive\_nohyst & 0.300 & 0.282 & 0.037 & -0.018 & 0.700 & 0.700 & 1.000 & 0.084 & 0.001 & 0.005 \\
+health & adaptive & 0.300 & 0.303 & 0.044 & 0.003 & 0.600 & 0.900 & 1.000 & 0.084 & -0.002 & 0.001 \\
+health & adaptive\_nohyst & 0.300 & 0.296 & 0.036 & -0.004 & 0.600 & 0.900 & 1.000 & 0.091 & -0.001 & 0.001 \\
+lawschool & adaptive & 0.300 & 0.205 & 0.019 & -0.095 & 1.000 & 0.000 & 0.600 & 0.000 & 0.001 & 0.003 \\
+lawschool & adaptive\_nohyst & 0.300 & 0.205 & 0.019 & -0.095 & 1.000 & 0.000 & 0.600 & 0.000 & 0.001 & 0.003 \\
+celeba & adaptive & 0.300 & 0.304 & 0.054 & 0.004 & 0.500 & 0.600 & 0.900 & 0.128 & 0.003 & 0.005 \\
+celeba & adaptive\_nohyst & 0.300 & 0.292 & 0.071 & -0.008 & 0.700 & 0.700 & 0.800 & 0.132 & 0.003 & 0.005 \\
+\hline
+\end{tabular}
+}
+\end{table*}
