@@ -1,0 +1,8 @@
+{
+  "n_points": 5,
+  "insample_mae": 0.0,
+  "loso_mae": 0.023400827444901066,
+  "monotone_violations": 0,
+  "kappa_min": 0.0727585684819372,
+  "kappa_max": 0.1611142414498062
+}
